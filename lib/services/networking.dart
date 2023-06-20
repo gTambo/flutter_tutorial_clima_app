@@ -12,7 +12,7 @@ class NetworkHelper {
       String data = response.body;
       return jsonDecode(data);
     } else {
-      print('request failed with status:  ${response.statusCode}.');
+      print('request failed with status: ${response.statusCode}.');
       // print(response.body);
     }
   }
