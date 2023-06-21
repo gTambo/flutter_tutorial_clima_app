@@ -17,7 +17,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
     await location.getCurrentLocation();
 
     var url = Uri.parse(
-        'https://api.openweathermap.org/data/2.5/weather?lat=${location.latitude}&lon=${location.longitude}&units=metric&appid=$apiKey');
+        'https://api.openweathermap.org/data/2.5/weather?lat=${location.latitude}&lon=${location.longitude}&units=imperial&appid=$apiKey');
     // print('url: $url');
     NetworkHelper networkHelper = NetworkHelper(url);
 

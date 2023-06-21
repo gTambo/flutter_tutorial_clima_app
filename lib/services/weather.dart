@@ -20,11 +20,14 @@ class WeatherModel {
   }
 
   String getMessage(int temp) {
-    if (temp > 25) {
+    if (temp > 77) {
+      // 25 if using metric
       return 'It\'s 🍦 time';
-    } else if (temp > 20) {
+    } else if (temp > 68) {
+      // 20 if metric
       return 'Time for shorts and 👕';
-    } else if (temp < 10) {
+    } else if (temp < 50) {
+      // 10 if metric
       return 'You\'ll need 🧣 and 🧤';
     } else {
       return 'Bring a 🧥 just in case';
