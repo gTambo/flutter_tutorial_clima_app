@@ -1,4 +1,5 @@
 # Miscellaneous
+lib/utilities/untracked_constants.dart
 *.class
 *.log
 *.pyc
